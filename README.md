@@ -1,7 +1,7 @@
-Project Title: WanderLust 🏨
+# Project Title: WanderLust 🏨
 A full-stack clone of the Airbnb web application. This project is currently a work in progress.
 
-✨ Description
+## ✨ Description
 WanderLust is a web application inspired by Airbnb. It allows users to browse, view, and list properties for rent. The goal is to replicate the core functionalities of Airbnb, providing a seamless experience for both property owners and renters.
 
 📸 Screenshots
@@ -11,92 +11,79 @@ WanderLust is a web application inspired by Airbnb. It allows users to browse, v
 Example:
 A screenshot of the homepage 
 
-WanderLust (Airbnb Clone) 🏨
-A full-stack clone of the Airbnb web application, created as a major project for the Apna College DELTA 2.0 course. This project is currently a work in progress.
+## Key Features
 
-✨ Features
-User Authentication (Sign Up, Login, Logout) using Passport.js.
+* **Full CRUD Functionality**: Users can Create, Read, Update, and Delete property listings.
+* **User Authentication**: Secure user registration and login system implemented with Passport.js.
+* **Image Uploads**: Seamless image hosting and delivery via the Cloudinary API.
+* **Interactive Maps**: Dynamic maps from Mapbox show the precise location of each property.
+* **Reviews and Ratings**: Users can post reviews and ratings for properties they've visited.
 
-Browse and view property listings with details like price, location, and description.
+## Tech Stack 🛠️
 
-Full Create, Read, Update, and Delete (CRUD) operations for listings.
+* **Frontend**: EJS, HTML, CSS, JavaScript, Bootstrap
+* **Backend**: Node.js, Express.js
+* **Database**: MongoDB, Mongoose
+* **APIs & Libraries**: Mapbox, Cloudinary, Passport.js, `connect-flash`, `express-session`
 
-Image uploads hosted on Cloudinary.
+## Getting Started
 
-Interactive maps to show property locations using the Mapbox API.
+Follow these instructions to get a local copy of the project up and running for development and testing.
 
-Planned Features
-User reviews and ratings for properties.
+### Prerequisites
 
-Booking and reservation system.
+Make sure you have the following installed on your system:
+* [Node.js](https://nodejs.org/) (which includes npm)
+* [MongoDB](https://www.mongodb.com/try/download/community)
+* [Git](https://git-scm.com/)
 
-Enhanced user profiles.
+### Installation & Setup
 
-🛠️ Tech Stack
-Frontend: HTML, CSS, JavaScript, EJS
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/Aaditya0807/MAJORPROJECT2.git](https://github.com/Aaditya0807/MAJORPROJECT2.git)
+    cd MAJORPROJECT2
+    ```
 
-Backend: Node.js, Express.js
+2.  **Install Node.js dependencies:**
+    *(This installs all required packages like Express, Mongoose, etc.)*
+    ```sh
+    npm install
+    ```
 
-Database: MongoDB with Mongoose
+### Running the Application 🚀
 
-APIs & Libraries: Mapbox API, Passport.js, Cloudinary, connect-flash, express-session, etc.
+You need to run **two** terminal sessions simultaneously: one for the database and one for the application server.
 
-⚙️ Installation & Setup
-Follow these steps to set up the project locally on your machine.
+1.  **Start the MongoDB Database:**
+    Open a terminal and run the MongoDB daemon. Leave this terminal running.
+    ```sh
+    mongod
+    ```
 
-Prerequisites
-Make sure you have the following installed:
+2.  **Start the Node.js Server:**
+    Open a **new** terminal, navigate to the project directory (`MAJORPROJECT2`), and run:
+    ```sh
+    node app.js
+    ```
 
-Node.js: Download & Install Node.js
+3.  **Access the application:**
+    Open your web browser and go to `http://localhost:8080/listings`.
 
-MongoDB: Download & Install MongoDB
+## How to Use
 
-Get Started
-Clone the repository:
-Open your terminal and run the following command to clone the project.
+1.  Navigate to the application URL in your browser.
+2.  Register for a new account or log in with existing credentials.
+3.  Browse the property listings on the homepage.
+4.  Click on any listing to see its full details, reviews, and location on the map.
+5.  Use the "Add New Listing" button to create and upload your own property.
 
-Bash
+## Author & Acknowledgements 🤝
 
-git clone https://github.com/Aaditya0807/MAJORPROJECT2.git
-cd MAJORPROJECT2
-Install dependencies:
-Install all the necessary npm packages defined in the package.json file.
+This project was built by **Aaditya Sharma** as part of the Apna College DELTA 2.0 curriculum.
 
-Bash
+* **Aaditya Sharma** - [GitHub: Aaditya0807](https://github.com/Aaditya0807)
 
-npm install
-Set up Environment Variables:
-Create a new file named .env in the root of your project. This file will store sensitive information and must not be committed to Git. Add the following variables:
+## License
 
-MONGO_URL="your_mongodb_connection_string"
-MAPBOX_TOKEN="your_mapbox_api_key"
-CLOUDINARY_CLOUD_NAME="your_cloudinary_cloud_name"
-CLOUDINARY_KEY="your_cloudinary_api_key"
-CLOUDINARY_SECRET="your_cloudinary_secret"
-SECRET="somegoodsecret"
-Start the MongoDB server:
-Before running the application, open a new, separate terminal window and start the MongoDB service using the command:
-
-Bash
-
-mongod
-Leave this terminal running in the background to keep the database connection alive.
-
-Start the application server:
-Go back to your original terminal (in the project directory) and start the application server.
-
-Bash
-
-node app.js
-Your server should now be running! Open your browser and go to http://localhost:8080. 🎉
-
-🙏 Acknowledgements
-This project was built as part of my learning journey through the Apna College DELTA 2.0 batch. The core concepts and structure are based on the full-stack web development curriculum taught in the course. A huge thank you to the instructors for their guidance.
-
-📜 License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-🧑‍💻 Contact
-Aaditya Sharma - aadityasharma08072004@gmail.com
-
-Project Link: https://github.com/Aaditya0807/MAJORPROJECT2
+Distributed under the MIT License. See `LICENSE` for more information.
